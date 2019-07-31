@@ -21,11 +21,16 @@ circle {fill: lightblue; stroke: black;}
   text-decoration: none;
   color: initial;
 }
+
+
 </style>
 <body onload='init()'>
+
+<select id="selectButton" disabled><option value="Gasoline">Gasoline</option></select>
+<div>
+      <svg width=600 height=600></svg>
+</div>   
 <a class="block" href="./page2.html">Click to Next Step</a>    
-<svg width=600 height=600>
-</svg>
 
 <script>
 var margin = 50;
@@ -89,7 +94,7 @@ var max_item = data.filter(function(d){if (d.AverageCityMPG==max_city) return d;
 annotations = [
 {
    note: {
-      label: "The Orange points represent the Gasoline Cars and how good their City and Highway MPG",
+      label: "The Orange points represent the Gasoline Cars and how good their City and Highway MPG. Click the button on top to proceed to see more.",
       title: "Gasoline car",
       wrap: 290
    },
